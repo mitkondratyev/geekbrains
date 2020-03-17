@@ -9,14 +9,14 @@ my_favourite_group = {
     ]
 }
 json_text = json.dumps(my_favourite_group)
-byte_text = json_text.encode('utf-8')
+byte_text = pickle.dumps(my_favourite_group)
 print(json_text)
 print(type(json_text))
 print(byte_text)
 print(type(byte_text))
 
 with open('group.json', 'w', encoding='utf-8') as f:
-    f.write(json_text)
+    json.dump(my_favourite_group, f)
 
 with open('group.pickle', 'wb') as f:
-    f.write(byte_text)
+    pickle.dump(my_favourite_group, f)
