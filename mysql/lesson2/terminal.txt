@@ -1,0 +1,13 @@
+2)
+mysql -u root -p
+\. create_user_table.sql
+
+3)
+mysqldump -u root -p example > dump_example.sql
+mysql -u root -p
+CREATE DATABASE IF NOT EXISTS `sample` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+use sample;
+\. dump_example.sql
+
+4)
+mysqldump -u root -p mysql --tables help_keyword --where='true limit 100' > dump_help_keyword.sql
