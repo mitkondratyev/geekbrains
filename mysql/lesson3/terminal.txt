@@ -1,0 +1,12 @@
+Заполнение
+mysql -u root -p
+\. examples.sql
+\. data.sql
+
+Дамп
+mysqldump -u root -p example > dump.sql
+
+Предложения
+1) в таблице media metadata Json поменять на Longtext
+2) в таблице media size сделать UNSIGNED
+3) добавить таблицы со странами и городами и в таблице profiles использовать id стран и городов
