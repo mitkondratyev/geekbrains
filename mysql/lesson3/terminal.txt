@@ -7,6 +7,5 @@ mysql -u root -p
 mysqldump -u root -p example > dump.sql
 
 Предложения
-1) в таблице media metadata Json поменять на Longtext
-2) в таблице media size сделать UNSIGNED
-3) добавить таблицы со странами и городами и в таблице profiles использовать id стран и городов
+1) в таблице media size сделать UNSIGNED
+2) добавить таблицы со странами и городами и в таблице profiles использовать id стран и городов
